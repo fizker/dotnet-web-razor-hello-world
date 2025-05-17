@@ -1,0 +1,26 @@
+# Basic project stuff
+.git
+.dockerignore
+Dockerfile
+docker-compose*.yml
+
+# .NET build artifacts
+**/obj/
+**/bin/
+
+# node stuff
+**/node_modules/
+.cache/
+
+
+# Dev-related artifacts
+certificates/
+.vs
+.env
+logs
+*.[Cc]ache
+makefile
+
+
+# OS files
+.DS_Store
