@@ -8,12 +8,8 @@ ARG DOTNET_RUNTIME_VERSION=9.0-alpine
 # Build C# server
 
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:${DOTNET_BUILD_VERSION} AS builder
-ENV docker=true
 
 WORKDIR /app
-
-RUN apk update && apk add \
-    git
 
 # Restoring nuget dependencies
 COPY Web/Web.csproj Web/Web.csproj
